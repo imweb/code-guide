@@ -12,18 +12,18 @@ Javascript编码规范
 ## 3. 命名
 
 #### `强制` 常量使用大写字符, 下划线连接
-```
+```javascript
 var SECONDS_IN_A_MINUTE = 60;
 obj.TEXT_WARNNING = '警告';
 ```
 
 #### `强制` 标准变量: 驼峰
-```
+```javascript
 var myCount = 1;
 ```
 
 #### `强制` 构造函数: 驼峰且大写第一个字母
-```
+```javascript
 function Point(x, y) {
     this.x = x;
     this.y = y;
@@ -31,7 +31,7 @@ function Point(x, y) {
 ```
 
 #### `推荐` 私有方法: 驼峰且加`_`前缀
-```
+```javascript
 function MyClass() {
     var _privateNum;
     this.getNum = function() {
@@ -52,14 +52,14 @@ var myCounter = {
 #### `推荐` 对布尔型的变量, 命名时加`is`,`has`,`can`前缀
 
 #### `强制` 不要使用让人糊涂的命名
-```
+```javascript
 var isNotError;
 var isNotClosed;
 ```
 
 #### `强制` 当出现以下字符时,统一拼写
 
-```
+```javascript
 var iOSVersion; //iOS
 var AndroidVersion; //Android
 var classID,teacherID,mID; //ID
@@ -71,7 +71,7 @@ var HTTPHeader; //HTTP
 
 #### `推荐` 字符串常量或字面量使用时, 使用单引号而非双引号
 
-```
+```javascript
 var str = '<span class="info">';
 str += 'some infomation</span>';
 ```
@@ -80,7 +80,7 @@ str += 'some infomation</span>';
 
 #### `强制` 即使是单行,也需要加花括号
 `正确`
-```
+```javascript
 //更推荐换行写
 if (isUndead) {
     grabFire();
@@ -90,12 +90,12 @@ if (isUndead) { grabFire(); }
 ```
 
 `错误`
-```
+```javascript
 if (isUndead) grabFire();
 ```
 
 #### `强制`操作符前后要有空格分隔
-```
+```javascript
 //运算符
 var a = 1 + 2;
 var thaco = hit + adjustment - randomFactor;
@@ -108,7 +108,7 @@ var fn = JSON.parse ? JSON.parse : function() {
 ```
 
 #### `强制`对象属性的冒号前无空格,后跟一个空格
-```
+```javascript
 var myObject = {
     propA: 1
 };
@@ -117,7 +117,7 @@ var myObject = {
 #### `推荐`逗号位置: Last comma
 
 `推荐` (last comma)
-```
+```javascript
 var foo = 1,
     bar = 2,
     baz = 3;
@@ -130,7 +130,7 @@ var obj = {
 ```
 
 `不推荐` (first comma)
-```
+```javascript
 var foo = 1
   , bar = 2
   , baz = 3;
@@ -144,7 +144,7 @@ var obj = {
 
 #### `注意`一定不要多写逗号了
 `错误`
-```
+```javascript
 var list = [
     {n: 1},
     {n: 2}, //<----- 会导致IE报错, GCC默认参数压缩也会报错
@@ -152,7 +152,7 @@ var list = [
 ```
 
 #### `推荐`function的参数括号: 前后都加一个空格, 若非匿名函数, 则名字和括号之间不再需要空格
-```
+```javascript
 //匿名函数, function和括号间有空格, 括号和花括号间也有空格
 var fn = function (param) {
     //...
@@ -165,7 +165,7 @@ function foo() {
 
 #### `推荐`条件判断括号: 前后都加一个空格
 `推荐`
-```
+```javascript
 if (true) {
     //...
 }
@@ -180,7 +180,7 @@ switch (v) {
 ```
 
 `不推荐`
-```
+```javascript
 if(true) {
     //...
 }
@@ -197,7 +197,7 @@ switch(v) {
 #### `推荐`括号紧挨两端处不要空格, 中间有逗号, 逗号后加空格
 
 `推荐`
-```
+```javascript
 function fn(arg1, arg2) {
     //...
 }
@@ -213,7 +213,7 @@ var arr = [1, 2, 3];
 ```
 
 `不推荐`
-```
+```javascript
 function fn( arg1, arg2 ) {
     //...
 }
@@ -230,7 +230,7 @@ var arr = [ 1, 2, 3 ];
 ```
 
 #### `推荐` if...else 写法
-```
+```javascript
 if (condition1) {
     doSomething1();
 } else if (condition2) {
@@ -242,7 +242,7 @@ if (condition1) {
 
 #### `推荐` switch...case 写法
 
-```
+```javascript
 switch (condition) {
     case "first":
         // code
@@ -258,7 +258,7 @@ switch (condition) {
 }
 ```
 
-```
+```javascript
 switch (condition) {
     case "first":
     case "second": //上一行不用加fall though: 两个case紧挨, jshint不会报错
@@ -282,14 +282,14 @@ switch (condition) {
 #### `强制`函数参数过多时的排版: 两层缩进
 
 `正确`
-```
+```javascript
 var localMonsterRumors = getLocalGossip(inkeeper,
         localInn, numberOfClerics, pintsOfAlePurchased,
         charismaAjustment);
 ```
 
 `错误`
-```
+```javascript
 var localMonsterRumors = getLocalGossip(inkeeper,
                                           localInn,
                                           numberOfClerics,
@@ -300,7 +300,7 @@ var localMonsterRumors = getLocalGossip(inkeeper,
 #### `推荐`采用临时变量来提高复杂判断或字符串拼接的可读性
 
 `错误`
-```
+```javascript
 if ( (conditionAA && conditionAB) || (conditionBA && conditionBB) ){
     //...
 }
@@ -310,7 +310,7 @@ var elem = document.getElementById('charClass-' + charClass +
 ```
 
 `正确`
-```
+```javascript
 var conditionA = conditionAA && conditionAB;
 var conditionB = conditionBA && conditionBB;
 if (conditionA || conditionB) {
@@ -355,7 +355,7 @@ var elem = document.getElementById(strChar + '_' + strCombat);
 ## 保留字
 #### `强制`对象的属性如果是保留字, 请务必使用引号定义,方括号引号引用
 `正确`
-```
+```javascript
 var example = {
     "new": function () {}
 };
@@ -364,7 +364,7 @@ var fn = example['new'];
 ```
 
 `错误`
-```
+```javascript
 var example = {
     new: function () {}
 };
@@ -384,7 +384,7 @@ var fn = example.new;
  - public method
 
 #### 多行注释
-```
+```javascript
 /**
  * this method is ...
  * @param {Object} ...
