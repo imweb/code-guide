@@ -5,7 +5,7 @@ HTML规范
 
 ### `强制`属性使用双引号
 
-### `推荐`不在自动闭合标签后加`/`
+### `建议`不在自动闭合标签后加`/`
 
 ### `强制`doctype使用大写
 ```
@@ -34,11 +34,11 @@ HTML规范
 </script>
 ```
 
-### `推荐`img加alt
+### `建议`img加alt
 
-### `推荐`link加title
+### `建议`link加title
 
-### `推荐?`统一顺序, 增加gzip的压缩比
+### `建议?`统一顺序, 增加gzip的压缩比
 ```
 <a href="javascript:void(0);" target="_blank" class="item" id="xxx" title="xxx">xxx</a>
 <a href="javascript:void(0);" target="_blank" class="item" id="yyy" title="yyy">yyy</a>
