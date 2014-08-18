@@ -30,7 +30,7 @@ function Point(x, y) {
 }
 ```
 
-#### `推荐` 私有方法: 驼峰且加`_`前缀
+#### `建议` 私有方法: 驼峰且加`_`前缀
 ```javascript
 function MyClass() {
     var _privateNum;
@@ -39,7 +39,7 @@ function MyClass() {
     };
 }
 
-// 虽然不推荐这么写一个对象(推荐用闭包来写)
+// 虽然不建议这么写一个对象(建议用闭包来写)
 // 但如果真这么写了, 请把意图上不想暴露的变量, 用_开头
 var myCounter = {
     _count: 1,
@@ -49,7 +49,7 @@ var myCounter = {
 };
 ```
 
-#### `推荐` 对布尔型的变量, 命名时加`is`,`has`,`can`前缀
+#### `建议` 对布尔型的变量, 命名时加`is`,`has`,`can`前缀
 
 #### `强制` 不要使用让人糊涂的命名
 ```javascript
@@ -69,7 +69,7 @@ var HTTPHeader; //HTTP
 //... 待补充
 ```
 
-#### `推荐` 字符串常量或字面量使用时, 使用单引号而非双引号
+#### `建议` 字符串常量或字面量使用时, 使用单引号而非双引号
 
 ```javascript
 var str = '<span class="info">';
@@ -81,7 +81,7 @@ str += 'some infomation</span>';
 #### `强制` 即使是单行,也需要加花括号
 `正确`
 ```javascript
-//更推荐换行写
+//更建议换行写
 if (isUndead) {
     grabFire();
 }
@@ -114,9 +114,9 @@ var myObject = {
 };
 ```
 
-#### `推荐`逗号位置: Last comma
+#### `建议`逗号位置: Last comma
 
-`推荐` (last comma)
+`建议` (last comma)
 ```javascript
 var foo = 1,
     bar = 2,
@@ -151,7 +151,7 @@ var list = [
 ];
 ```
 
-#### `推荐`function的参数括号: 前后都加一个空格, 若非匿名函数, 则名字和括号之间不再需要空格
+#### `建议`function的参数括号: 前后都加一个空格, 若非匿名函数, 则名字和括号之间不再需要空格
 ```javascript
 //匿名函数, function和括号间有空格, 括号和花括号间也有空格
 var fn = function (param) {
@@ -163,7 +163,7 @@ function foo() {
 }
 ```
 
-#### `推荐`条件判断括号: 前后都加一个空格
+#### `建议`条件判断括号: 前后都加一个空格
 `推荐`
 ```javascript
 if (true) {
@@ -194,7 +194,7 @@ switch(v) {
 }
 ```
 
-#### `推荐`括号紧挨两端处不要空格, 中间有逗号, 逗号后加空格
+#### `建议`括号紧挨两端处不要空格, 中间有逗号, 逗号后加空格
 
 `推荐`
 ```javascript
@@ -229,7 +229,7 @@ else {
 var arr = [ 1, 2, 3 ];
 ```
 
-#### `推荐` if...else 写法
+#### `建议` if...else 写法
 ```javascript
 if (condition1) {
     doSomething1();
@@ -240,7 +240,7 @@ if (condition1) {
 }
 ```
 
-#### `推荐` switch...case 写法
+#### `建议` switch...case 写法
 
 ```javascript
 switch (condition) {
@@ -297,7 +297,7 @@ var localMonsterRumors = getLocalGossip(inkeeper,
                                           charismaAjustment);
 ```
 
-#### `推荐`采用临时变量来提高复杂判断或字符串拼接的可读性
+#### `建议`采用临时变量来提高复杂判断或字符串拼接的可读性
 
 `错误`
 ```javascript
@@ -322,11 +322,11 @@ var strCombat = 'combatStatus-' + armorClass + '-' + toHitBonus;
 var elem = document.getElementById(strChar + '_' + strCombat);
 ```
 
-#### `推荐`逻辑块 之间使用空行
+#### `建议`逻辑块 之间使用空行
 
 ## 5. 杂项
 
-#### `推荐`尽量使用标准方法而不是用非标准方法
+#### `建议`尽量使用标准方法而不是用非标准方法
 
 例:
 优先用string.charAt(3) 而不用 string[3]
@@ -339,7 +339,7 @@ var elem = document.getElementById(strChar + '_' + strCombat);
 
 ### for...in
 
-#### `推荐`对数组遍历时, 用下标的for循环而非for...in
+#### `建议`对数组遍历时, 用下标的for循环而非for...in
 
 #### `注意`使用for...in时要注意利用hasOwnProperty排除掉可能的原型污染干扰
 
