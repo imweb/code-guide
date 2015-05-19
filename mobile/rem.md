@@ -5,7 +5,7 @@
 某些元素的宽/高（或者是位置）需要随着页面的宽/高改变而改变，同时元素所在的行/列并没有被占满。比如某个按钮要居中显示，宽度是页面宽度的66%。而另一种情况，一行两个课程卡片分别占50%则不属于这种情况。
 
 + **font-size < 12px**
-font-size小于12px的字体在3倍屏下面会显得很小，如果不想写media query的话，倒是可以考虑使用自适应方案。
+font-size小于12px的字体在3倍屏下面会显得很小，采用REM自适应方案替代media query的话。
 
 ## 2 开发规范
 + 在head头引入[初始化js脚本](https://github.com/imweb/mobile/blob/master/src/fisComponents/rem.html)
