@@ -35,6 +35,8 @@
 	组件使用的时候安装一个组件，使用类似于npm，如果没有制定安装具体的组件，可以通过pakage.json中的lego字段申明依赖。
 	
 	lego install jquery 或者 lego install jquery@2.1.3
+
+	组件install之后，会安装到本地的lego_modules中，所有依赖组件都会平级放到该目录下。
 	
 	**package.json**
 	
