@@ -71,7 +71,7 @@
 
 	**lego search**`组件查找，完善中`
 
-	**lego updata**`组件更新，完善中`
+	**lego update**`组件更新，完善中`
 
 	**lego server update** `第三方组件更新检查(jquery)，通过配置组件来源，通过命令检查更新，进行同步，完善中`
 
