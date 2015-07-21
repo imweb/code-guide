@@ -33,7 +33,7 @@
 
 ### 常用结构
 
-#### 空白模板
+#### PC空白模板
 
 	<!doctype html>
 	<html>
@@ -43,14 +43,31 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="keywords" content="">
 		<meta name="description" content="">
+		<meta name="format-detection"content="telephone=no,email=no"/>
+		<title>page title</title>
+	</head>
+	<body></body>
+	</html>
+	
+如果需要ie8支持html5标签或者响应式，请引入对应的js，如下面采用html注释对ie8引入html5标签支持和响应式支持
+
+    <!--[if lt IE 9]>
+    	<script src="js/html5-respond.js"></script>
+    <![endif]-->
+	    
+#### Mobile空白标签
+
+	<!doctype html>
+	<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="keywords" content="">
+		<meta name="description" content="">
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<meta content="yes" name="apple-mobile-web-app-capable"/>
 	 	<meta content="black" name="apple-mobile-web-app-status-bar-style"/>
 		<meta name="format-detection"content="telephone=no,email=no"/>
 		<title>page title</title>
-	    <!--[if lt IE 9]>
-	    	<script src="js/html5-respond.js"></script>
-	    <![endif]-->
 	</head>
 	<body></body>
 	</html>
