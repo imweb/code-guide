@@ -55,7 +55,7 @@
     	<script src="js/html5-respond.js"></script>
     <![endif]-->
 	    
-#### Mobile空白标签
+#### Mobile空白模板
 
 	<!doctype html>
 	<html>
