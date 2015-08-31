@@ -4,8 +4,9 @@
 +   **组件规范**
 
     在lego系统的组件需要遵循以下规范
-    +   [Lego组件规范](https://github.com/imweb/code-guide/blob/master/lego/SPECIFICATION.md)
-    +   [Lego平台规范](https://github.com/imweb/code-guide/blob/master/lego/PLATFORM-SPECIFICATION.md)
+    +   [Lego 组件规范](https://github.com/imweb/code-guide/blob/master/lego/SPECIFICATION.md)
+    +   [Lego 平台规范](https://github.com/imweb/code-guide/blob/master/lego/PLATFORM-SPECIFICATION.md)
+    +   [Lego 运营规范](https://github.com/imweb/code-guide/blob/master/lego/PLATFORM-SPECIFICATION.md)
 +   **组件构建体系**
     +   团队后续构建工具统一迁徙至FIS3，lego会集成到fis3中，目前H5已接入Lego。
 +   **组件同步机制**

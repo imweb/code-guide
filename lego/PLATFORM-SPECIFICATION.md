@@ -1,6 +1,13 @@
 #lego组件平台规范
 @(基础能力)
 
++   **组件规范**
+
+    在lego系统的组件需要遵循以下规范
+    +   [Lego 组件规范](https://github.com/imweb/code-guide/blob/master/lego/SPECIFICATION.md)
+    +   [Lego 平台规范](https://github.com/imweb/code-guide/blob/master/lego/PLATFORM-SPECIFICATION.md)
+    +   [Lego 运营规范](https://github.com/imweb/code-guide/blob/master/lego/PLATFORM-SPECIFICATION.md)
+
 -----------------------
 
 [lego](http://lego.imweb.io)基于[spm](http://spmjs.io/)基础之上，完善组件分类体系，组件认证体系，组件反馈体系的完整的组件使用生态系统。协助组件使用者在组件选择、信任组件、组件使用中更好的参与到组件生态系统中。

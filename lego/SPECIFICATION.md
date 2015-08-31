@@ -1,6 +1,14 @@
 #组件规范
 @(基础能力)
 
++   **组件规范**
+
+    在lego系统的组件需要遵循以下规范
+    +   [Lego 组件规范](https://github.com/imweb/code-guide/blob/master/lego/SPECIFICATION.md)
+    +   [Lego 平台规范](https://github.com/imweb/code-guide/blob/master/lego/PLATFORM-SPECIFICATION.md)
+    +   [Lego 运营规范](https://github.com/imweb/code-guide/blob/master/lego/PLATFORM-SPECIFICATION.md)
+
+
 ----------
 ###1 组件规范
 
