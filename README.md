@@ -15,5 +15,6 @@
 
 #####Lego Specification
 
-+	[Lego Development](/lego/SPECIFICATION.md)
-+	[Platform](/lego/PLATFORM-SPECIFICATION.md)
++	[Lego 组件开发](/lego/SPECIFICATION.md)
++	[Lego 组件平台](/lego/PLATFORM-SPECIFICATION.md)
++   [Lego 组件运营](/lego/OPERATION.md)
