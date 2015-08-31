@@ -84,11 +84,9 @@
 
 **代码规范**
 
-[代码规范](https://github.com/imweb/code-guide)
+[代码规范](http://imweb.github.io/CodeGuide/)
 
-####1.4 注释规范
-[注释规范](https://github.com/imweb/code-guide/blob/master/md/note.md)
-####1.5 文档规范
+####1.4 文档规范
 **文档说明**
     文档以[markdown格式](http://wowubuntu.com/markdown/#precode)，`每个组件必须存在README.md文件，用来描述组件`。
 
