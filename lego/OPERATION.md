@@ -11,7 +11,7 @@
 ----------------
 
 +   **组件构建体系**
-    +   团队后续构建工具统一迁徙至FIS3，lego会集成到fis3中，目前H5已接入Lego，[plugin](http://lego.imweb.io/package/fis-postprocessor-lego-require)。
+    +   团队后续构建工具统一迁徙至FIS3，lego会集成到fis3中，目前H5已接入Lego，基于fis2的插件[plugin](http://lego.imweb.io/package/fis-postprocessor-lego-require)。
 +   **组件同步机制**
 
     内网源和外网源定期同步，开发网同学请优先使用内网源 ` lego config set registry http://lego.oa.com`
