@@ -2,18 +2,20 @@
 @(系统建设)
 
 +   **组件规范**
+
     在lego系统的组件需要遵循以下规范
     +   [Lego组件规范](https://github.com/imweb/code-guide/blob/master/lego/SPECIFICATION.md)
     +   [Lego平台规范](https://github.com/imweb/code-guide/blob/master/lego/PLATFORM-SPECIFICATION.md)
 +   **组件构建体系**
     +   团队后续构建工具统一迁徙至FIS3，lego会集成到fis3中，目前H5已接入Lego。
 +   **组件同步机制**
-    内网源和外网源定期同步，开发网同学请优先使用内网源
-    ` lego config set registry http://lego.oa.com`
+
+    内网源和外网源定期同步，开发网同学请优先使用内网源 ` lego config set registry http://lego.oa.com`
 +   **组件提交规范**
     +   **文档 & 测试用例**
         +   需要给出完整的API文档、DEMO、测试用例，才能通过组件认证，被认证的组件，才会被大家优先使用。
     +   **组件文档规范**
+    
         分为[内网源](http://lego.oa.com)，[外网源](http://lego.imweb.io)。
         +   内网源
             
