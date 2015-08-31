@@ -9,7 +9,8 @@
     +   [Lego 运营规范](https://github.com/imweb/code-guide/blob/master/lego/PLATFORM-SPECIFICATION.md)
 
 
-----------
+-------------------
+
 ###1 组件规范
 
 ####1.1 命名规范
