@@ -11,7 +11,42 @@
 ----------------
 
 +   **组件构建体系**
-    +   团队后续构建工具统一迁徙至FIS3，lego会集成到fis3中，目前H5已接入Lego，基于fis2的插件[plugin](http://lego.imweb.io/package/fis-postprocessor-lego-require)。
+
+    团队后续构建工具统一迁徙至FIS3，lego会集成到fis3中，目前H5已接入Lego，基于fis2的插件[plugin](http://lego.imweb.io/package/fis-postprocessor-lego-require)。
+
+    +   **构建规则**
+    
+        首先来看一下项目目录
+
+        ——  edu-proj
+
+            ---- dist 发布目录
+
+            ---- dev 开发目录
+
+            ---- src 源码目录
+
+                ————   lego_modules lego依赖，基于同目录下的package.json维护
+
+                    ———— zepto lego组件，规范为组件规范
+
+                ————   modules 自身模块目录，下含多个模块，项目模块和全局模块可平行转移
+
+                ————  pages 静态文件目录
+
+                ————  images 图片目录
+
+                ————  package.json 维护lego组件
+
+        +   **构建规范**
+            +   **优先级**
+                
+                优先级遵循项目modules > lego_modules，当使用着通过require('zepto')或者require.async('zepto')时，构建优先查找项目modules是否包含该模块，如包含，则使用该模块。反之，则查找lego_modules下是否包含该模块，并深度分析模块下的package.json中依赖，然后打包。
+            +   **相对目录**
+                
+                当使用相对目录的时：require(./zepto)，只查找项目modules，并分析依赖构建打包。因此，为方便代码可读性和维护性，使用项目modules，优先采取相对目录使用。
+
+
 +   **组件同步机制**
 
     内网源和外网源定期同步，开发网同学请优先使用内网源 ` lego config set registry http://lego.oa.com`
