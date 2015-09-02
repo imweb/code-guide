@@ -34,7 +34,7 @@
 
                 ————  pages 静态文件目录
 
-                ————  images 图片目录
+                    ————  images 图片目录
 
                 ————  package.json 维护lego组件
 
