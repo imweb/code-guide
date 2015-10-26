@@ -13,6 +13,10 @@
 +	[移动端技术数据上报](mobile/report.md)
 +	[REM开发规范](mobile/rem.md)
 
+#####PC 规范
+
++   [PC技术数据上报](pc/report.md)
+
 #####Lego Specification
 
 +	[Lego 组件开发](/lego/SPECIFICATION.md)
