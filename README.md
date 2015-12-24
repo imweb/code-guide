@@ -2,11 +2,7 @@
 
 #####开发规范
 
-+	[JavaScript](md/javascript.md)
-+	[HTML](md/html.md)
-+ 	[CSS](md/css.md)
-+	[注释](md/note.md)
-+	[Other](md/other.md)
++	[开发规范](http://imweb.github.io/CodeGuide/)
 
 #####Mobile 规范
 
